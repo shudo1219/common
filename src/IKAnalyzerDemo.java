@@ -31,7 +31,7 @@ public class IKAnalyzerDemo {
 		System.out.println(str);
 		
 		System.out.println("Begin to analyze from IKAnalyer");
-		Analyzer analyzer = new IKAnalyzer(true);
+		Analyzer analyzer = new Analyzer(true);
 		StringReader reader = new StringReader(str);
 		TokenStream stream = analyzer.tokenStream("", reader);
 		OffsetAttribute offset = stream.addAttribute(OffsetAttribute.class);
@@ -61,7 +61,7 @@ public class IKAnalyzerDemo {
   
 	 public static void show() throws Exception{
 		 TokenStream ts = null;
-		 Analyzer analyzer = new IKAnalyzer(true);  
+		 Analyzer analyzer = new Analyzer(true);  
 	     ts= analyzer.tokenStream("myfield", new StringReader("剑生杨朝来访问控制列表这是一个中文分词的例子，你可以直接运行它！IKAnalyer can analysis english text too"));
 
          //获取词元位置属性
