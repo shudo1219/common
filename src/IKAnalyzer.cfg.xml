@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">  
+<properties>  
+	<comment>IK Analyzer 扩展配置</comment>
+	<!--用户可以在这里配置自己的扩展字典 -->
+	<!--  <entry key="ext_dict">sougou.dic</entry> -->
+	
+	<!-- for ik2012_u6-->
+    <entry key="ext_dict">line1.0.4.dic;hotel3.1.dic;scenery3.0.5.dic;</entry> 
+	<!-- for ik_statble_3.2.3-->
+	 <!-- entry key="ext_dict">/line1.0.4.dic;/hotel3.1.dic;/scenery3.0.5.dic;</entry> -->
+
+	<!--用户可以在这里配置自己的扩展停止词字典-->
+	<entry key="ext_stopwords">ext_stopword.dic;stopword.dic</entry> 
+	
+</properties>
